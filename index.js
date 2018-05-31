@@ -19,7 +19,7 @@ function deepestChild() {
   let next = [];
   while (current.length) {
     if (current[0].children.length === 0) {
-      return current.innerHTML;
+      return current[0].innerHTML;
     } else {
       for (let i = 0; i < current.length; i++) {
         next.push(current[i]);
