@@ -18,6 +18,7 @@ function deepestChild() {
   let current = array;
   let next = [];
   while (current.length > 0) {
+    console.log(current)
     if (current[0].children.length === 0) {
       return current[0].innerHTML;
     } else {
